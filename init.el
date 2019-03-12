@@ -290,10 +290,6 @@ content of a buffer."
 
 ;;; Quality of life
 
-;;; TODO: Paredit breaks this, fix asap
-;;; (setq hungry-delete-chars-to-skip " \t\f\v")
-;;; (global-hungry-delete-mode)
-
 (global-whitespace-cleanup-mode t)
 
 (smooth-scrolling-mode t)
@@ -346,9 +342,6 @@ content of a buffer."
 
 ;;; Auto-enable wrapping in Markdown buffers
 (add-hook 'gfm-mode-hook 'visual-line-mode)
-
-;;; TODO: Use pandoc for generating the HTML, gfm-mode/markdown-mode output
-;;;       really sucks..
 
 (with-eval-after-load 'gfm-mode
   (setq markdown-make-gfm-checkboxes-buttons t
