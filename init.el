@@ -190,6 +190,8 @@
 (auto-compression-mode 1)
 
 ;;; Automatically reflow comments at fill column
+(setq-default fill-column 88)
+
 (defun comment-auto-fill ()
   (setq-local comment-auto-fill-only-comments t)
   (auto-fill-mode 1))
