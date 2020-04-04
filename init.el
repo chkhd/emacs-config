@@ -367,9 +367,9 @@ content of a buffer."
 
 (flx-ido-mode 1)
 
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(amx-initialize)
+(global-set-key (kbd "M-x") 'amx)
+(global-set-key (kbd "M-X") 'amx-major-mode-commands)
 
 (crm-custom-mode 1)
 
@@ -794,7 +794,7 @@ string).  It returns t if a new expansion is found, nil otherwise."
     ("6c5cd013d19a95327497d4cb12c61cbb3bcb185f8b77fffcd8e92714091de45c" "f718beb08054a2ad605787e6d7716bccca3ba6a1eeeb966b47477d395d5e7411" "0301a26dedfda81ca220ad6169588b5408884e7b4a5363f3e6a0e98d5c65a257" default)))
  '(package-selected-packages
    (quote
-    (smex ido-completing-read+ ido-at-point flx-ido flx whitespace-cleanup-mode css-eldoc smartparens realgud eglot flyspell-lazy redshank iflipb persistent-scratch undo-tree restclient go-mode rich-minority anzu czech-holidays exec-path-from-shell which-key smooth-scrolling fix-word zzz-to-char hungry-delete expand-region projectile elisp-slime-nav blacken diff-hl magit paredit paren-face))))
+    (amx ido-completing-read+ ido-at-point flx-ido flx whitespace-cleanup-mode css-eldoc smartparens realgud eglot flyspell-lazy redshank iflipb persistent-scratch undo-tree restclient go-mode rich-minority anzu czech-holidays exec-path-from-shell which-key smooth-scrolling fix-word zzz-to-char hungry-delete expand-region projectile elisp-slime-nav blacken diff-hl magit paredit paren-face))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
