@@ -501,6 +501,7 @@ string).  It returns t if a new expansion is found, nil otherwise."
 
 (with-eval-after-load 'magit
   (setq magit-last-seen-setup-instructions "2.1.0"
+        magit-diff-refine-hunk 'all
         magit-stage-all-confirm nil
         magit-unstage-all-confirm nil
         magit-revert-buffers 'silent
