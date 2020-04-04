@@ -11,7 +11,7 @@
 (when window-system
   ;;(set-frame-font "SF Mono 16" nil t)
   ;;(set-frame-font "Menlo 16" nil t)
-  (set-frame-font "Monaco 15" nil t))
+  (set-frame-font "Monaco 13" nil t))
 
 ;;; Initialize the theme
 (setq custom-theme-directory (expand-file-name "themes" user-emacs-directory))
