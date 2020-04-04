@@ -8,3 +8,5 @@ elpa
 ido.last
 recentf
 transient
+*.lock
+auto-save-list
