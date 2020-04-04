@@ -163,6 +163,16 @@
 
 (recentf-mode 1)
 
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+      (message "Aborting")))
+
+(global-set-key (kbd "C-x C-r") 'ido-recentf-open)
+(global-set-key (kbd "C-x f") 'ido-recentf-open)
+
 ;;; Only show events I care about
 (setq holiday-bahai-holidays nil
       holiday-hebrew-holidays nil
@@ -204,7 +214,6 @@
 (global-unset-key (kbd "C-x C-c"))
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
-(global-set-key (kbd "C-x f") 'recentf-open-files)
 (global-set-key (kbd "C-c re") 'recursive-edit)
 
 (setq truncate-partial-width-windows nil
