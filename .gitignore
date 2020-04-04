@@ -1,0 +1,10 @@
+.emacs.desktop
+.persistent-scratch
+.places
+.savehist
+amx-items
+backups
+elpa
+ido.last
+recentf
+transient
